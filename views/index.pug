@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  textarea#word-box Enter text...
+  div.container
+    button#word-btn Count words
+    label Number of words: 
+    input#num-words(type="text" class="disabled" disabled="disabled")
