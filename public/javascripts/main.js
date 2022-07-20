@@ -10,7 +10,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
             .length;
         console.log(numWords);
         let counter = document.querySelector('#num-words');
-        counter.value = numWords;
+        var commas = numWords.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        counter.value = commas;
         
     });
 
