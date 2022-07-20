@@ -1,12 +1,9 @@
-const { application } = require('express');
 var express = require('express');
-var port = 8080;
+var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Word Counter' });
 });
 
-application.listen(port, () => {
-  console.log(`App listening on port ${port}`);
-});
+module.exports = router;
