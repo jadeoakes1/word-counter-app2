@@ -8,5 +8,5 @@ router.get('/', function(req, res, next) {
 });
 
 application.listen(port, () => {
-  console.log('App listening on port ' + {port});
+  console.log(`App listening on port ${port}`);
 });
